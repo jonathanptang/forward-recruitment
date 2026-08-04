@@ -267,11 +267,12 @@ st.markdown("""
 ---
 **Questions about the methodology?** This dashboard uses this framework to provide
 context-adjusted finishing analysis. Return to the main Dashboard to explore individual players.
-""")
+
 ---
 
 **Whole site created by Jonathan Tang**
 
-📧 Email: jonathan.ptang7@gmail.com  
+📧 Email: jonathan.ptang7@gmail.com
+
 💼 LinkedIn: www.linkedin.com/in/jonathantang04
 """)
