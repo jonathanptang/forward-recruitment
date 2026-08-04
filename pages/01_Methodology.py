@@ -26,7 +26,7 @@ with st.expander("Pressure Index Calculation", expanded=False):
     - Trailing by 3 or more
     - Trailing by 2
     - Trailing by 1
-    - Tied (0-0)
+    - Tied
     - Leading by 1
     - Leading by 2
     - Leading by 3 or more
