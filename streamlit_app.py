@@ -182,13 +182,13 @@ st.sidebar.markdown("### 🔍 Filters")
 
 leagues = ['All']
 if 'league' in qualified_forwards.columns:
-    league_list = sorted(qualified_forwards['league'].dropna().unique().tolist())
+    league_list = sorted([x for x in qualified_forwards['league'].dropna().unique() if pd.notna(x)])
     if len(league_list) > 0:
         leagues += league_list
-    else:
-        st.warning("No league data available")
-else:
-    st.warning("League column not found in data")
+
+# Debug: show what we found
+if len(leagues) == 1:
+    st.sidebar.warning(f"Debug: League column found but no valid leagues. Columns: {qualified_forwards.columns.tolist()}")
 
 teams = ['All']
 if 'team' in qualified_forwards.columns:
